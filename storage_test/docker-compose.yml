@@ -1,0 +1,118 @@
+version: "3.9"
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:25.12
+    container_name: ch
+    hostname: clickhouse
+    ports:
+      - "8123:8123"   # HTTP
+      - "9000:9000"   # Native
+    volumes:
+      - ch_data:/var/lib/clickhouse
+      - ./clickhouse/init:/docker-entrypoint-initdb.d
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    environment:
+      CLICKHOUSE_DB: analytics
+      CLICKHOUSE_USER: benchmark
+      CLICKHOUSE_PASSWORD: benchmark
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+    healthcheck:
+      test: ["CMD", "clickhouse-client", "--query", "SELECT 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  mongodb:
+    image: mongo:8.2.3
+    container_name: mongo
+    hostname: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+      - ./mongodb/init:/docker-entrypoint-initdb.d
+    command: >
+      mongod --wiredTigerCacheSizeGB=2
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  data-generator:
+    build: ./generator
+    container_name: data-generator
+    environment:
+      USERS: 1000000
+      MOVIES: 100000
+      LIKES: 200000000
+      REVIEWS: 10000000
+      BOOKMARKS: 50000000
+      SEED: 42
+    volumes:
+      - ./data:/data
+    command: ["python", "generate.py"]
+    depends_on:
+      clickhouse:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+
+  ingest-worker:
+    build: ./ingest
+    container_name: ingest
+    environment:
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_DB: analytics
+      CLICKHOUSE_USER: benchmark
+      CLICKHOUSE_PASSWORD: benchmark
+      MONGO_URI: mongodb://mongodb:27017
+      MODE: bulk    # bulk | realtime
+      BATCH_SIZE: 10000
+    volumes:
+      - ./data:/data
+    depends_on:
+      data-generator:
+        condition: service_completed_successfully
+
+  benchmark-runner:
+    build: ./benchmark
+    container_name: benchmark
+    environment:
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_DB: analytics
+      CLICKHOUSE_USER: benchmark
+      CLICKHOUSE_PASSWORD: benchmark
+      MONGO_URI: mongodb://mongodb:27017
+      DURATION: 300
+      CONCURRENCY: 50
+    depends_on:
+      ingest-worker:
+        condition: service_completed_successfully
+
+  prometheus:
+    image: prom/prometheus:v3.9.1
+    container_name: prometheus
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana:12.4.0
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - prometheus
+
+volumes:
+  ch_data:
+  mongo_data:
+  grafana_data:
