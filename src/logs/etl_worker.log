@@ -1,0 +1,443 @@
+2025-11-01 11:24:27,701 [INFO] config.config (config.py:49): Logging initialized
+2025-11-01 11:25:13,173 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.009s]
+2025-11-01 11:38:14,646 [INFO] config.config (config.py:49): Logging initialized
+2025-11-01 11:41:26,962 [INFO] config.config (config.py:49): Logging initialized
+2025-11-01 11:46:07,540 [INFO] config.config (config.py:49): Logging initialized
+2025-11-01 11:48:51,293 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.007s]
+2025-11-01 11:59:49,889 [INFO] config.config (config.py:49): Logging initialized
+2025-11-01 12:07:08,081 [INFO] config.config (config.py:49): Logging initialized
+2025-11-01 12:10:43,881 [INFO] config.config (config.py:49): Logging initialized
+2025-11-02 04:19:13,737 [INFO] config.config (config.py:49): Logging initialized
+2025-11-02 04:47:44,566 [INFO] config.config (config.py:49): Logging initialized
+2025-11-02 04:53:18,766 [INFO] config.config (config.py:49): Logging initialized
+2025-11-02 04:59:33,081 [INFO] config.config (config.py:49): Logging initialized
+2025-11-02 04:59:39,574 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-02 04:59:39,599 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.023s]
+2025-11-02 05:00:05,036 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-02 05:00:05,051 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-02 05:06:30,739 [INFO] config.config (config.py:49): Logging initialized
+2025-11-03 07:30:59,542 [INFO] config.config (config.py:49): Logging initialized
+2025-11-03 08:41:21,822 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:41:22,008 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.185s]
+2025-11-03 08:41:22,023 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:41:22,071 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.047s]
+2025-11-03 08:41:22,083 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:41:22,096 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-03 08:41:22,127 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.026s]
+2025-11-03 08:41:22,150 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/not-a-valid-id [status:404 duration:0.008s]
+2025-11-03 08:44:33,790 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:44:33,803 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-03 08:44:33,817 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:44:33,831 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-03 08:44:33,843 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:44:33,857 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-03 08:44:33,874 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.011s]
+2025-11-03 08:48:12,727 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:48:12,742 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-03 08:48:12,757 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:48:12,771 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-03 08:48:12,787 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:48:12,800 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.011s]
+2025-11-03 08:48:12,826 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.017s]
+2025-11-03 08:48:41,606 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:48:41,620 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-03 08:48:41,636 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:48:41,650 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-03 08:48:41,664 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:48:41,676 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.011s]
+2025-11-03 08:48:41,689 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.009s]
+2025-11-03 08:51:04,064 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:51:04,080 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-03 08:51:04,100 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:51:04,115 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-03 08:51:04,132 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:51:04,143 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.011s]
+2025-11-03 08:51:04,159 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.009s]
+2025-11-03 08:51:04,173 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:51:04,211 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.037s]
+2025-11-03 08:51:04,225 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:51:04,251 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:400 duration:0.026s]
+2025-11-03 08:52:48,857 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:52:48,874 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.016s]
+2025-11-03 08:52:48,891 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:52:48,906 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-03 08:52:48,922 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:52:48,932 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.009s]
+2025-11-03 08:52:48,949 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.012s]
+2025-11-03 08:52:48,962 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:52:48,976 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.013s]
+2025-11-03 08:52:48,990 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:52:49,000 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:400 duration:0.009s]
+2025-11-03 08:53:53,310 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:53:53,325 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-03 08:53:53,341 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:53:53,355 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-03 08:53:53,370 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:53:53,384 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-03 08:53:53,399 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.010s]
+2025-11-03 08:53:53,413 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:53:53,427 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.013s]
+2025-11-03 08:53:53,440 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:53:53,450 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-03 08:53:53,462 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:53:53,471 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.008s]
+2025-11-03 08:53:53,514 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.038s]
+2025-11-03 08:57:40,024 [INFO] services.genre_service (genre_service.py:50): Executing genre search query.
+2025-11-03 08:57:40,041 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.016s]
+2025-11-03 08:57:40,056 [INFO] services.genre_service (genre_service.py:50): Executing genre search query.
+2025-11-03 08:57:40,066 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:400 duration:0.009s]
+2025-11-03 08:58:38,601 [INFO] services.genre_service (genre_service.py:50): Executing genre search query.
+2025-11-03 08:58:38,614 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.012s]
+2025-11-03 08:58:38,631 [INFO] services.genre_service (genre_service.py:50): Executing genre search query.
+2025-11-03 08:58:38,662 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.030s]
+2025-11-03 08:58:38,674 [INFO] services.genre_service (genre_service.py:50): Executing genre search query.
+2025-11-03 08:58:38,684 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-03 08:58:38,697 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.008s]
+2025-11-03 08:58:38,719 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:58:38,733 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-03 08:58:38,746 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:58:38,761 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-03 08:58:38,775 [INFO] services.movie_service (movie_service.py:67): Executing movie search query.
+2025-11-03 08:58:38,788 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-03 08:58:38,801 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.008s]
+2025-11-03 08:58:38,817 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:58:38,830 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.012s]
+2025-11-03 08:58:38,842 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:58:38,854 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.011s]
+2025-11-03 08:58:38,869 [INFO] services.person_service (person_service.py:48): Executing person search query.
+2025-11-03 08:58:38,880 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.010s]
+2025-11-03 08:58:38,895 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.009s]
+2025-11-04 02:40:35,962 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:43:42,830 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:44:11,858 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:45:01,839 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:48:21,008 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:50:08,636 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:50:13,049 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 02:50:13,076 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/films/_search [status:404 duration:0.025s]
+2025-11-04 02:55:07,442 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:55:11,364 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 02:55:11,374 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/films/_search [status:404 duration:0.009s]
+2025-11-04 02:56:41,038 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:56:46,501 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 02:56:46,589 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.087s]
+2025-11-04 02:57:13,616 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 02:57:13,626 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/films/_search [status:404 duration:0.008s]
+2025-11-04 02:58:56,848 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 02:59:04,648 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 02:59:04,715 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.066s]
+2025-11-04 02:59:11,868 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 02:59:11,887 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.016s]
+2025-11-04 03:01:36,612 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:02:47,920 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:02:57,746 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:02:57,760 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-04 03:04:36,718 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:04:45,043 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:04:45,058 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.014s]
+2025-11-04 03:06:40,011 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:09:05,011 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:09:12,305 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:09:12,330 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.023s]
+2025-11-04 03:11:06,355 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:11:16,016 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:11:16,028 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:400 duration:0.011s]
+2025-11-04 03:12:08,564 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:12:14,123 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:12:14,137 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-04 03:14:26,666 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:15:43,893 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:27:46,483 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:28:03,605 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:28:03,633 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.026s]
+2025-11-04 03:29:57,889 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:30:02,774 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:30:02,793 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.017s]
+2025-11-04 03:30:40,387 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:30:45,971 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:30:45,995 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.023s]
+2025-11-04 03:32:37,330 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 03:32:45,004 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 03:32:45,028 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.023s]
+2025-11-04 06:38:09,302 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 06:39:40,212 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:39:40,338 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.125s]
+2025-11-04 06:39:40,353 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:39:40,395 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.041s]
+2025-11-04 06:39:40,407 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:39:40,426 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.018s]
+2025-11-04 06:39:40,457 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.027s]
+2025-11-04 06:39:40,472 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:39:40,495 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.022s]
+2025-11-04 06:39:40,509 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:39:40,527 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.017s]
+2025-11-04 06:39:40,539 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:39:40,554 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.014s]
+2025-11-04 06:39:40,568 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.009s]
+2025-11-04 06:39:40,592 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:39:40,615 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.022s]
+2025-11-04 06:39:40,629 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:39:40,643 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.014s]
+2025-11-04 06:39:40,654 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:39:40,667 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.012s]
+2025-11-04 06:39:40,681 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.009s]
+2025-11-04 06:39:40,702 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.008s]
+2025-11-04 06:40:55,412 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:40:55,432 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.019s]
+2025-11-04 06:40:55,451 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:40:55,469 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.017s]
+2025-11-04 06:40:55,485 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:40:55,498 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-04 06:40:55,517 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.013s]
+2025-11-04 06:40:55,532 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:40:55,545 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.013s]
+2025-11-04 06:40:55,560 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:40:55,573 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.012s]
+2025-11-04 06:40:55,588 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:40:55,600 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.011s]
+2025-11-04 06:40:55,618 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.012s]
+2025-11-04 06:40:55,643 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:40:55,656 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.012s]
+2025-11-04 06:40:55,671 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:40:55,686 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.014s]
+2025-11-04 06:40:55,701 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:40:55,714 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.012s]
+2025-11-04 06:40:55,731 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.012s]
+2025-11-04 06:40:55,754 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.008s]
+2025-11-04 06:46:20,231 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 06:46:47,971 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:46:47,986 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-04 06:46:47,999 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:46:48,012 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-04 06:46:48,025 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:46:48,036 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.010s]
+2025-11-04 06:46:48,050 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.009s]
+2025-11-04 06:46:48,062 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:46:48,074 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.011s]
+2025-11-04 06:46:48,086 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:46:48,095 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-04 06:46:48,107 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:46:48,117 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-04 06:46:48,129 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.007s]
+2025-11-04 06:46:48,151 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:46:48,162 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.010s]
+2025-11-04 06:46:48,173 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:46:48,183 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.010s]
+2025-11-04 06:46:48,197 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:46:48,208 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.010s]
+2025-11-04 06:46:48,220 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.007s]
+2025-11-04 06:46:48,238 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.006s]
+2025-11-04 06:50:46,903 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 06:51:00,489 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:51:00,503 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.013s]
+2025-11-04 06:51:00,516 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:51:00,528 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.011s]
+2025-11-04 06:51:00,541 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:51:00,551 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.009s]
+2025-11-04 06:51:00,562 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.006s]
+2025-11-04 06:51:00,574 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:51:00,585 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.010s]
+2025-11-04 06:51:00,597 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:51:00,607 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-04 06:51:00,618 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:51:00,628 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-04 06:51:00,638 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.006s]
+2025-11-04 06:51:00,659 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:51:00,669 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 06:51:00,680 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:51:00,691 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.010s]
+2025-11-04 06:51:00,703 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:51:00,716 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.012s]
+2025-11-04 06:51:00,726 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.006s]
+2025-11-04 06:51:00,744 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.005s]
+2025-11-04 06:51:51,581 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 06:52:11,430 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:52:11,443 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.011s]
+2025-11-04 06:52:11,457 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:52:11,470 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.011s]
+2025-11-04 06:52:11,482 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 06:52:11,492 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.009s]
+2025-11-04 06:52:11,502 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.006s]
+2025-11-04 06:52:11,514 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:52:11,524 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-04 06:52:11,536 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:52:11,545 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 06:52:11,558 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 06:52:11,567 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 06:52:11,582 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.006s]
+2025-11-04 06:52:11,603 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:52:11,613 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 06:52:11,625 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:52:11,636 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.010s]
+2025-11-04 06:52:11,648 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 06:52:11,658 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 06:52:11,668 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.006s]
+2025-11-04 06:52:11,687 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.006s]
+2025-11-04 07:00:15,102 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 07:00:34,099 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:00:34,112 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.011s]
+2025-11-04 07:00:34,125 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:00:34,136 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.010s]
+2025-11-04 07:00:34,147 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:00:34,157 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.009s]
+2025-11-04 07:00:34,169 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.006s]
+2025-11-04 07:00:34,181 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:00:34,191 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-04 07:00:34,203 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:00:34,212 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:00:34,226 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:00:34,235 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:00:34,244 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.006s]
+2025-11-04 07:00:34,264 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:00:34,275 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.010s]
+2025-11-04 07:00:34,286 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:00:34,296 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 07:00:34,308 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:00:34,316 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.007s]
+2025-11-04 07:00:34,326 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.006s]
+2025-11-04 07:00:34,343 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.006s]
+2025-11-04 07:01:28,225 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 07:01:41,653 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:01:41,665 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.011s]
+2025-11-04 07:01:41,679 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:01:41,692 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-04 07:01:41,704 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:01:41,713 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.009s]
+2025-11-04 07:01:41,724 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.006s]
+2025-11-04 07:01:41,736 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:01:41,745 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:01:41,757 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:01:41,766 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:01:41,778 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:01:41,787 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:01:41,797 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.006s]
+2025-11-04 07:01:41,818 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:01:41,828 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 07:01:41,840 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:01:41,850 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 07:01:41,861 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:01:41,881 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 07:01:41,890 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.006s]
+2025-11-04 07:01:41,908 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.005s]
+2025-11-04 07:04:49,915 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 07:05:01,645 [INFO] services.film_service (film_service.py:87): Searching films: query='Star', page=1, size=50
+2025-11-04 07:05:01,794 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.147s]
+2025-11-04 07:06:01,460 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 07:06:15,794 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:06:15,808 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-04 07:06:15,822 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:06:15,834 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-04 07:06:15,848 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:06:15,857 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.008s]
+2025-11-04 07:06:15,881 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.007s]
+2025-11-04 07:06:15,892 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:06:15,902 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:06:15,913 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:06:15,922 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:06:15,934 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:06:15,943 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:06:15,953 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.006s]
+2025-11-04 07:06:15,974 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:06:15,984 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 07:06:15,995 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:06:16,005 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 07:06:16,017 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:06:16,027 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 07:06:16,037 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.006s]
+2025-11-04 07:06:16,055 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.005s]
+2025-11-04 07:07:05,384 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:07:05,395 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.010s]
+2025-11-04 07:07:05,410 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:07:05,421 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.010s]
+2025-11-04 07:07:05,434 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:07:05,443 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.008s]
+2025-11-04 07:07:05,454 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.006s]
+2025-11-04 07:07:05,467 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:07:05,477 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-04 07:07:05,490 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:07:05,501 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.010s]
+2025-11-04 07:07:05,517 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:07:05,528 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.009s]
+2025-11-04 07:07:05,540 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.007s]
+2025-11-04 07:07:05,561 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:07:05,570 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.008s]
+2025-11-04 07:07:05,583 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:07:05,591 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.008s]
+2025-11-04 07:07:05,603 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:07:05,612 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.008s]
+2025-11-04 07:07:05,623 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.006s]
+2025-11-04 07:07:05,637 [INFO] services.film_service (film_service.py:89): Searching films: query='Star', page=1, size=5
+2025-11-04 07:07:05,665 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.027s]
+2025-11-04 07:07:05,687 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/search [status:404 duration:0.006s]
+2025-11-04 07:08:00,901 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:08:00,913 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.012s]
+2025-11-04 07:08:00,928 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:08:00,939 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.010s]
+2025-11-04 07:08:00,952 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 07:08:00,962 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.009s]
+2025-11-04 07:08:00,973 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/movies/_doc/3d825f60-9fff-4dfe-b294-1a45fa1e115d [status:200 duration:0.006s]
+2025-11-04 07:08:00,984 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:08:00,994 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:08:01,005 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:08:01,014 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.008s]
+2025-11-04 07:08:01,026 [INFO] services.genre_service (genre_service.py:45): Executing genre search query.
+2025-11-04 07:08:01,038 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/genres/_search [status:200 duration:0.011s]
+2025-11-04 07:08:01,049 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/genres/_doc/3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff [status:200 duration:0.006s]
+2025-11-04 07:08:01,070 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:08:01,079 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.008s]
+2025-11-04 07:08:01,092 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:08:01,101 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.009s]
+2025-11-04 07:08:01,114 [INFO] services.person_service (person_service.py:45): Executing person search query.
+2025-11-04 07:08:01,125 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/persons/_search [status:200 duration:0.010s]
+2025-11-04 07:08:01,135 [INFO] elastic_transport.transport (_async_transport.py:277): GET http://elasticsearch:9200/persons/_doc/c56744f8-57f8-4e22-af94-07a7c4ceec9b [status:200 duration:0.006s]
+2025-11-04 07:08:01,149 [INFO] services.film_service (film_service.py:89): Searching films: query='Star', page=1, size=5
+2025-11-04 07:08:01,171 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.021s]
+2025-11-04 07:08:01,189 [INFO] services.film_service (film_service.py:89): Searching films: query='nonexistentfilmquery', page=1, size=5
+2025-11-04 07:08:01,241 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.051s]
+2025-11-04 07:23:17,507 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 09:36:52,343 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 09:49:00,678 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 09:51:16,026 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-04 09:53:48,843 [INFO] config.config (config.py:49): Logging initialized
+2025-11-04 09:54:43,052 [INFO] config.config (config.py:49): Logging initialized
+2025-11-08 07:56:47,128 [INFO] config.config (config.py:49): Logging initialized
+2025-11-08 07:58:13,329 [INFO] config.config (config.py:49): Logging initialized
+2025-11-08 07:58:35,951 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-08 07:58:36,088 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.136s]
+2025-11-08 08:00:59,746 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 08:23:33,821 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 11:19:06,971 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-09 11:19:07,632 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.644s]
+2025-11-09 11:21:24,075 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-09 11:21:24,114 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.037s]
+2025-11-09 11:30:23,359 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 11:32:47,033 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 11:33:38,691 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 12:56:32,889 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 12:57:50,744 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 12:58:28,155 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 12:58:38,090 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-09 12:58:38,174 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.082s]
+2025-11-09 13:02:46,790 [INFO] config.config (config.py:49): Logging initialized
+2025-11-09 13:02:54,407 [INFO] services.film_service (film_service.py:61): Executing film search query.
+2025-11-09 13:02:54,442 [INFO] elastic_transport.transport (_async_transport.py:277): POST http://elasticsearch:9200/movies/_search [status:200 duration:0.034s]
+2025-12-07 06:49:39,334 [INFO] config.config (config.py:47): Logging initialized
+2025-12-07 13:48:26,270 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 07:09:20,184 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 07:11:57,784 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 07:40:41,159 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 08:03:26,783 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 08:05:55,957 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 08:11:12,376 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 08:37:53,350 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 09:33:56,420 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 09:37:02,229 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 09:38:44,469 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 09:44:38,134 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 09:54:04,713 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 10:52:41,447 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 10:58:40,267 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 11:01:54,286 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 11:02:12,342 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 11:07:59,347 [INFO] config.config (config.py:47): Logging initialized
+2025-12-13 11:09:37,154 [INFO] config.config (config.py:47): Logging initialized
