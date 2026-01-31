@@ -2,10 +2,13 @@ import json
 import logging
 import logging.config
 import sys
+import sentry_sdk
+from sentry_sdk.integrations.fastapi import FastApiIntegration
+from sentry_sdk.integrations.logging import LoggingIntegration
 from typing import Any
-
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
 
 class JsonFormatter(logging.Formatter):
     def format(self, record):
@@ -19,6 +22,7 @@ class JsonFormatter(logging.Formatter):
             log_record["exception"] = self.formatException(record.exc_info)
         return json.dumps(log_record)
 
+
 def setup_logging(log_level: str = logging.INFO) -> None:
     """Configure logging for the ETL worker."""
 
@@ -28,6 +32,24 @@ def setup_logging(log_level: str = logging.INFO) -> None:
     logging.basicConfig(
         level=logging.INFO,
         handlers=[handler],
+    )
+
+    sentry_sdk.init(
+        dsn="http://eugene@sentry:9000/<PROJECT_ID>",
+        integrations=[FastApiIntegration()],
+        traces_sample_rate=1.0,  # reduce in prod
+        send_default_pii=False,
+        environment="development",
+    )
+
+    sentry_logging = LoggingIntegration(
+        level=logging.INFO,
+        event_level=logging.ERROR,
+    )
+
+    sentry_sdk.init(
+        dsn="http://<PUBLIC_KEY>@sentry:9000/<PROJECT_ID>",
+        integrations=[sentry_logging],
     )
 
 

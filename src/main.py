@@ -16,6 +16,7 @@ from api.v1.genres_router import genres_router
 from api.v1.search_router import films_search_router
 
 setup_logging()
+
 app = FastAPI(title="films API with Elasticsearch")
 
 app.include_router(home_router)
@@ -35,11 +36,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # Override FastAPI's openapi generation function
 def custom_openapi():
     custom_openapi_schema["components"]["securitySchemes"] = {
-        "BearerAuth": {
-            "type": "http",
-            "scheme": "bearer",
-            "bearerFormat": "JWT"
-        }
+        "BearerAuth": {"type": "http", "scheme": "bearer", "bearerFormat": "JWT"}
     }
     custom_openapi_schema["security"] = [{"BearerAuth": []}]
     return custom_openapi_schema

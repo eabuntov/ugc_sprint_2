@@ -30,6 +30,7 @@ BATCH_SIZE_MONGO = int(os.getenv("MONGO_BATCH_SIZE", 1_000))
 ch = CHClient(**CH_CONFIG)
 mongo = MongoClient(MONGO_URI)["analytics"]
 
+
 # =========================
 # UTIL
 # =========================
@@ -43,6 +44,7 @@ def timed(label, fn):
         "seconds": elapsed,
         "rows_per_sec": count / elapsed if elapsed > 0 else None,
     }
+
 
 # =========================
 # CLICKHOUSE INGEST
@@ -72,6 +74,7 @@ def ch_ingest(file, table, columns):
             total += len(rows)
 
     return total
+
 
 # =========================
 # MONGODB INGEST
@@ -107,6 +110,7 @@ def mongo_likes(file):
 
     return total
 
+
 def mongo_simple(file, collection, key):
     ops = []
     total = 0
@@ -131,6 +135,7 @@ def mongo_simple(file, collection, key):
         total += len(ops)
 
     return total
+
 
 # =========================
 # ORCHESTRATION
@@ -221,6 +226,7 @@ def run():
         json.dump(results, f, indent=2)
 
     print(f"Benchmark results written to {out}")
+
 
 # =========================
 # ENTRYPOINT

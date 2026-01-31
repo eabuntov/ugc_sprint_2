@@ -31,6 +31,7 @@ def get_current_user(
 
     return payload
 
+
 def get_anonymous_user(
     credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme),
 ):
@@ -47,9 +48,11 @@ def get_anonymous_user(
     except jwt.InvalidTokenError:
         return None
 
+
 def require_role(role: str):
     def checker(user=Depends(get_current_user)):
         if role not in user.get("roles", []):
             raise HTTPException(status_code=403, detail="Forbidden")
         return user
+
     return checker

@@ -24,6 +24,7 @@ fake.seed_instance(SEED)
 START_DATE = datetime(2022, 1, 1)
 END_DATE = datetime(2025, 1, 1)
 
+
 # =========================
 # HELPERS
 # =========================
@@ -31,17 +32,18 @@ def rand_date():
     delta = END_DATE - START_DATE
     return START_DATE + timedelta(seconds=random.randint(0, int(delta.total_seconds())))
 
+
 def zipf_movie():
     # Zipf-like popularity (bounded)
     return min(MOVIES, int(random.paretovariate(1.3)))
 
+
 def weighted_rating():
     # Bias towards positive ratings
     return random.choices(
-        population=list(range(11)),
-        weights=[1, 1, 2, 3, 6, 10, 15, 20, 25, 20, 10],
-        k=1
+        population=list(range(11)), weights=[1, 1, 2, 3, 6, 10, 15, 20, 25, 20, 10], k=1
     )[0]
+
 
 # =========================
 # LIKES
@@ -54,9 +56,10 @@ def generate_likes():
                 "user_id": random.randint(1, USERS),
                 "movie_id": zipf_movie(),
                 "rating": weighted_rating(),
-                "created_at": rand_date().isoformat()
+                "created_at": rand_date().isoformat(),
             }
             f.write(json.dumps(record) + "\n")
+
 
 # =========================
 # REVIEWS
@@ -74,12 +77,13 @@ def generate_reviews():
                 "author_id": random.randint(1, USERS),
                 "review_text": fake.text(max_nb_chars=400),
                 "user_movie_rating": weighted_rating(),
-                "published_at": rand_date().isoformat()
+                "published_at": rand_date().isoformat(),
             }
             review_ids.append(review_id)
             f.write(json.dumps(record) + "\n")
 
     return review_ids
+
 
 # =========================
 # REVIEW REACTIONS
@@ -95,9 +99,10 @@ def generate_review_reactions(review_ids):
                     "review_id": review_id,
                     "user_id": random.randint(1, USERS),
                     "is_like": random.choice([0, 1]),
-                    "created_at": rand_date().isoformat()
+                    "created_at": rand_date().isoformat(),
                 }
                 f.write(json.dumps(record) + "\n")
+
 
 # =========================
 # BOOKMARKS
@@ -119,9 +124,10 @@ def generate_bookmarks():
             record = {
                 "user_id": user_id,
                 "movie_id": movie_id,
-                "created_at": rand_date().isoformat()
+                "created_at": rand_date().isoformat(),
             }
             f.write(json.dumps(record) + "\n")
+
 
 # =========================
 # MAIN

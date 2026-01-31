@@ -99,9 +99,52 @@ services:
       timeout: 5s
       retries: 5
 
+  sentry-postgres:
+    image: postgres:15-alpine
+    container_name: sentry-postgres
+    environment:
+      POSTGRES_USER: sentry
+      POSTGRES_PASSWORD: sentry
+      POSTGRES_DB: sentry
+    volumes:
+      - sentry_pg_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  sentry-redis:
+    image: redis:8.2.2-alpine
+    container_name: sentry-redis
+    networks:
+      - app-network
+
+  sentry:
+    image: sentry:9.1.2
+    container_name: sentry
+    depends_on:
+      - sentry-postgres
+      - sentry-redis
+    ports:
+      - "9000:9000"
+    environment:
+      SENTRY_SECRET_KEY: "CHANGE_ME_SUPER_SECRET_KEY"
+      SENTRY_DB_USER: sentry
+      SENTRY_DB_PASSWORD: sentry
+      SENTRY_DB_NAME: sentry
+      SENTRY_DB_HOST: sentry-postgres
+      SENTRY_DB_PORT: 5432
+      SENTRY_REDIS_HOST: sentry-redis
+      SENTRY_REDIS_PORT: 6379
+      SENTRY_SINGLE_ORGANIZATION: "true"
+    volumes:
+      - sentry_data:/var/lib/sentry/files
+    networks:
+      - app-network
+
 networks:
   app-network:
     driver: bridge
 
 volumes:
   mongo_data:
+  sentry_pg_data:
+  sentry_data:

@@ -9,7 +9,9 @@ from services.film_service import FilmService
 
 from dependencies.auth import get_current_user
 
-films_search_router = APIRouter(prefix="/search", tags=["search"], dependencies=[Depends(get_current_user)])
+films_search_router = APIRouter(
+    prefix="/search", tags=["search"], dependencies=[Depends(get_current_user)]
+)
 
 
 # --- Dependencies ---

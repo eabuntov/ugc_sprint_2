@@ -2,10 +2,12 @@ from pydantic import BaseModel, Field
 from datetime import datetime
 from typing import Optional
 
+
 class BookmarkCreate(BaseModel):
     user_id: str
     entity_type: str
     entity_id: str
+
 
 class BookmarkOut(BookmarkCreate):
     id: str
@@ -14,6 +16,7 @@ class BookmarkOut(BookmarkCreate):
 
 class LikeCreate(BookmarkCreate):
     pass
+
 
 class LikeOut(LikeCreate):
     id: str
@@ -27,9 +30,11 @@ class ReviewCreate(BaseModel):
     rating: int = Field(ge=1, le=10)
     text: Optional[str]
 
+
 class ReviewUpdate(BaseModel):
     rating: Optional[int] = Field(ge=1, le=10)
     text: Optional[str]
+
 
 class ReviewOut(ReviewCreate):
     id: str

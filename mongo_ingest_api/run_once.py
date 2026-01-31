@@ -2,6 +2,7 @@ import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo import ASCENDING
 
+
 async def main():
     client = AsyncIOMotorClient("mongodb://localhost:27017")
     db = client["content"]
@@ -24,6 +25,7 @@ async def main():
     )
 
     print("Indexes created successfully")
+
 
 if __name__ == "__main__":
     asyncio.run(main())

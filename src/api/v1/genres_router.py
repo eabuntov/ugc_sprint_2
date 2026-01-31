@@ -8,7 +8,9 @@ from repositories.elastic_repository import ElasticRepository
 from services.genre_service import GenreService
 from dependencies.auth import get_current_user
 
-genres_router = APIRouter(prefix="/genres", tags=["genres"], dependencies=[Depends(get_current_user)])
+genres_router = APIRouter(
+    prefix="/genres", tags=["genres"], dependencies=[Depends(get_current_user)]
+)
 
 
 async def get_elastic_client() -> AsyncElasticsearch:
