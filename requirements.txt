@@ -2,3 +2,6 @@ pymongo==4.16.0
 clickhouse-driver==0.2.10
 pydantic==2.12.5
 pydantic-settings==2.12.0
+wemake-python-styleguide
+flake8-html
+mypy

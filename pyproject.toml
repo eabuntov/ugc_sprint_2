@@ -1,0 +1,14 @@
+[tool.flake8]
+max-line-length = 88
+format = html
+htmldir = flake8-report
+statistics = true
+doctests = true
+
+[tool.mypy]
+python_version = 3.10
+strict = true
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
