@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  quality:
+    name: Lint & Type Check (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install wemake-python-styleguide flake8-html mypy
+
+      - name: Run flake8 (wemake) with HTML report
+        run: |
+          flake8 .
+
+      - name: Upload flake8 HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flake8-report-py${{ matrix.python-version }}
+          path: flake8-report/
+
+      - name: Run mypy
+        run: |
+          mypy .
+
+  notify:
+    name: Telegram Notification
+    needs: quality
+    runs-on: ubuntu-latest
+    if: success()
+
+    steps:
+      - name: Send Telegram message
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage \
+            -d chat_id=${TELEGRAM_CHAT_ID} \
+            -d text="✅ CI passed successfully for PR #${{ github.event.pull_request.number }} in repository ${{ github.repository }}"

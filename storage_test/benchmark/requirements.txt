@@ -1,0 +1,2 @@
+pymongo==4.16.0
+clickhouse-driver==0.2.10

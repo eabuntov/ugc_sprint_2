@@ -1,0 +1,150 @@
+services:
+  fastapi_app:
+    build:
+      context: ./src/
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    volumes:
+      - ./src:/opt/app
+      - ./config:/opt/config
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://logstash:12201"
+        tag: "fastapi_app"
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://fastapi_app:8000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.1.5
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+    networks:
+      - app-network
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:9.1.5
+    volumes:
+      - ./config/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    ports:
+      - "12201:12201/udp"
+    depends_on:
+      - elasticsearch
+    networks:
+      - app-network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:9.1.5
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - app-network
+
+  mongo_ingest_api:
+    build:
+      context: mongo_ingest_api
+      dockerfile: Dockerfile
+    container_name: fastapi-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      MONGO_URI: mongodb://mongo:27017
+      MONGO_DB: content
+    depends_on:
+      mongo_db:
+        condition: service_healthy
+    volumes:
+      - ./config:/opt/config
+      - ./mongo_ingest_api:/opt/app
+    command: >
+      uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8000
+      --workers 2
+    networks:
+      - app-network
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/health" ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  mongo_db:
+    image: mongo:8.2.3
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: content
+    volumes:
+      - mongo_data:/data/db
+    command: [ "mongod", "--bind_ip_all" ]
+    networks:
+      - app-network
+    healthcheck:
+      test: [ "CMD", "mongosh", "--eval", "db.adminCommand('ping')" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  sentry-postgres:
+    image: postgres:15-alpine
+    container_name: sentry-postgres
+    environment:
+      POSTGRES_USER: sentry
+      POSTGRES_PASSWORD: sentry
+      POSTGRES_DB: sentry
+    volumes:
+      - sentry_pg_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  sentry-redis:
+    image: redis:8.2.2-alpine
+    container_name: sentry-redis
+    networks:
+      - app-network
+
+  sentry:
+    image: sentry:9.1.2
+    container_name: sentry
+    depends_on:
+      - sentry-postgres
+      - sentry-redis
+    ports:
+      - "9000:9000"
+    environment:
+      SENTRY_SECRET_KEY: "CHANGE_ME_SUPER_SECRET_KEY"
+      SENTRY_DB_USER: sentry
+      SENTRY_DB_PASSWORD: sentry
+      SENTRY_DB_NAME: sentry
+      SENTRY_DB_HOST: sentry-postgres
+      SENTRY_DB_PORT: 5432
+      SENTRY_REDIS_HOST: sentry-redis
+      SENTRY_REDIS_PORT: 6379
+      SENTRY_SINGLE_ORGANIZATION: "true"
+    volumes:
+      - sentry_data:/var/lib/sentry/files
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongo_data:
+  sentry_pg_data:
+  sentry_data:
