@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, status
 from datetime import datetime
 from db import db
 from models import BookmarkCreate
@@ -25,5 +25,5 @@ async def get_user_bookmarks(user_id: str):
 async def delete_bookmark(user_id: str, entity_id: str):
     result = await db.bookmarks.delete_one({"user_id": user_id, "entity_id": entity_id})
     if result.deleted_count == 0:
-        raise HTTPException(404, "Bookmark not found")
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Bookmark not found")
     return {"status": "deleted"}

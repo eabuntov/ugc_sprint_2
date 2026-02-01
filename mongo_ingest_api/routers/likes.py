@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, status
 from datetime import datetime
 from db import db
 from models import LikeCreate
@@ -27,5 +27,5 @@ async def count_likes(entity_id: str):
 async def unlike(user_id: str, entity_id: str):
     result = await db.likes.delete_one({"user_id": user_id, "entity_id": entity_id})
     if result.deleted_count == 0:
-        raise HTTPException(404, "Like not found")
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Like not found")
     return {"status": "unliked"}

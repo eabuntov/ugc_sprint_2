@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, status
 from datetime import datetime
 from bson import ObjectId
 from db import db
@@ -10,8 +10,8 @@ router = APIRouter(prefix="/reviews", tags=["Reviews"])
 @router.post("/")
 async def create_review(data: ReviewCreate):
     doc = data.model_dump()
-    doc["created_at"] = datetime.utcnow()
-    doc["updated_at"] = datetime.utcnow()
+    doc["created_at"] = datetime.now()
+    doc["updated_at"] = datetime.now()
 
     res = await db.reviews.insert_one(doc)
     return {"id": str(res.inserted_id)}
@@ -35,7 +35,7 @@ async def update_review(review_id: str, data: ReviewUpdate):
         },
     )
     if result.matched_count == 0:
-        raise HTTPException(404, "Review not found")
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Review not found")
     return {"status": "updated"}
 
 
@@ -43,5 +43,5 @@ async def update_review(review_id: str, data: ReviewUpdate):
 async def delete_review(review_id: str):
     result = await db.reviews.delete_one({"_id": ObjectId(review_id)})
     if result.deleted_count == 0:
-        raise HTTPException(404, "Review not found")
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Review not found")
     return {"status": "deleted"}
