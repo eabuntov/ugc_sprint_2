@@ -17,6 +17,23 @@ async def health():
 
 @app.on_event("startup")
 async def init_indexes():
-    await db.bookmarks.create_index([("user_id", 1), ("entity_id", 1)], unique=True)
-    await db.likes.create_index([("user_id", 1), ("entity_id", 1)], unique=True)
-    await db.reviews.create_index([("entity_id", 1)])
+    """
+    Initialize the indexes on the Mongo
+    Indexes are being created by mongo if not already existing
+    """
+    await db.bookmarks.create_index(
+        [("user_id", 1), ("entity_id", 1)],
+        unique=True,
+        name="bookmarks_user_entity_uq",
+    )
+
+    await db.likes.create_index(
+        [("user_id", 1), ("entity_id", 1)],
+        unique=True,
+        name="likes_user_entity_uq",
+    )
+
+    await db.reviews.create_index(
+        [("entity_id", 1)],
+        name="reviews_entity_idx",
+    )
