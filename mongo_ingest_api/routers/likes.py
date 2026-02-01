@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
 from datetime import datetime
-from db import db
-from models import LikeCreate
+from ..db import db
+from ..models import LikeCreate
 
 router = APIRouter(prefix="/likes", tags=["Likes"])
 

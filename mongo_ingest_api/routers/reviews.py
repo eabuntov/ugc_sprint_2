@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, status
 from datetime import datetime
 from bson import ObjectId
-from db import db
-from models import ReviewCreate, ReviewUpdate
+from ..db import db
+from ..models import ReviewCreate, ReviewUpdate
 
 router = APIRouter(prefix="/reviews", tags=["Reviews"])
 

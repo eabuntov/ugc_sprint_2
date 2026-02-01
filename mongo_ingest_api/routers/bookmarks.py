@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
 from datetime import datetime
-from db import db
-from models import BookmarkCreate
+from ..db import db
+from ..models import BookmarkCreate
 
 router = APIRouter(prefix="/bookmarks", tags=["Bookmarks"])
 

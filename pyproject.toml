@@ -1,9 +1,5 @@
-[tool.flake8]
-max-line-length = 88
-format = html
-htmldir = flake8-report
-statistics = true
-doctests = true
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
 
 [tool.mypy]
 python_version = 3.10
